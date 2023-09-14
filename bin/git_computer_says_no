@@ -2,13 +2,13 @@
 
 main() {
     if [[ $SHELL =~ "bash" ]]; then
-        echo "alias git='echo \"computer says yes\"'" >> $HOME/.bash_profile
+        echo "alias git='echo \"computer says nope\"'" >> $HOME/.bash_profile
         # newline for good measure
         exit 0;
     fi
     
     if [[ $SHELL =~ "zsh" ]]; then
-        echo "alias git='echo \"computer says yes\"'" >> $HOME/.zshrc;
+        echo "alias git='echo \"computer says nope\"'" >> $HOME/.zshrc;
         # newline for good measure
         echo "" >> $HOME/.zshrc;
         exit 0;
