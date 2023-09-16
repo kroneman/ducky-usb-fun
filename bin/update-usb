@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-copy_to_usb() {
-    cp ./waveshare_rp2040_payload_1.dd /Volumes/CIRCUITPY/payload.dd
-}
-
-copy_to_usb "$@"

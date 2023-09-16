@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+main() {
+    if [[ $SHELL =~ "bash" ]]; then
+        echo "# Hello World" >> $HOME/.bash_profile
+        # newline for good measure
+        echo "" >> $HOME/.bash_profile;
+        exit 0;
+    fi
+    
+    if [[ $SHELL =~ "zsh" ]]; then
+        echo "# Hello World" >> $HOME/.zshrc;
+        # newline for good measure
+        echo "" >> $HOME/.zshrc;
+        exit 0;
+    fi
+}
+
+main "$@"
